@@ -4,7 +4,7 @@ import sqlite3
 
 app = Flask(__name__)
 
-# Generate a Fernet key for symmetric encryption.
+# Generate a Fernet key for symmetric encryption.  
 # NOTE: This key is generated each time the app starts, so stored
 # encrypted passwords cannot be decrypted after a restart.
 fernet_key = Fernet.generate_key()
